@@ -47,7 +47,7 @@ p {
     color: #434455;
 }
 
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -59,7 +59,7 @@ p {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 
 /* -------------- HEADER ----------------- */
 
@@ -134,10 +134,18 @@ p {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    background-color: #4d5ae5;
 }
 
 .btn:hover {
+    background-color: #404bbf;
     cursor: pointer;
+
+
+}
+
+.btn:focus {
+    background-color: #404bbf;
 }
 
 /* -------------- ABOUT-SECTION ----------------- */

@@ -1,5 +1,7 @@
 body {
-    font-family: "Roboto", sans-serif, "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
+    background-color: #FFFFFF;
+    color: #434455;
 }
 
 ul {
@@ -25,6 +27,7 @@ h2 {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: capitalize;
     color: #2e2f42;
 }
 
@@ -44,6 +47,20 @@ p {
     color: #434455;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* -------------- HEADER ----------------- */
 
 .header-nav {}
@@ -55,11 +72,11 @@ p {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2e2f42;
+    color: #4d5ae5;
 }
 
 .header-logo span {
-    color: #4d5ae5;
+    color: #2e2f42;
 }
 
 .header-list {}
@@ -74,7 +91,17 @@ p {
     color: #2e2f42;
 }
 
-.header-contacts {}
+.header-item-link:hover,
+.header-item-link:focus {
+    color: #404bbf;
+    ;
+}
+
+.header-contacts {
+    font-style: normal
+}
+
+.contacts-list {}
 
 .contacts-item {}
 
@@ -86,9 +113,18 @@ p {
     color: #434455;
 }
 
+.contacts-item-link:hover,
+.contacts-item-link:focus {
+    color: #404bbf;
+    ;
+}
+
 /* -------------- HERO-SECTION ----------------- */
 
-.hero-section {}
+.hero-section {
+    background-color: #2e2f42;
+    ;
+}
 
 .hero-title {}
 
@@ -100,12 +136,18 @@ p {
     color: #fff;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 /* -------------- ABOUT-SECTION ----------------- */
 
 
 .about-section {}
 
 .about {}
+
+
 
 .about-list {}
 
@@ -119,13 +161,17 @@ p {
 
 /* -------------- TEAM-SECTION ----------------- */
 
-.team-section {}
+.team-section {
+    background-color: #f4f4fd;
+}
 
 .team-title {}
 
 .team-list {}
 
-.team-item {}
+.team-item {
+    background-color: #FFFFFF
+}
 
 .team-img {}
 
@@ -156,18 +202,23 @@ p {
 
 /* -------------- FOOTER ----------------- */
 
+.footer {
+    background-color: #2e2f42;
+}
+
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #f4f4fd;
+    color: #4d5ae5;
 }
 
-.footer-logo span {
-    color: #4d5ae5;
+.footer-logo .active {
+
+    color: #f4f4fd;
 }
 
 .footer-text {
